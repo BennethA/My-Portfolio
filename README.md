@@ -13,6 +13,7 @@ Technologies Used
 - JavaScript
 - Tailwind CSS
 - React JS
+- Framer Motion
 
 Features
 
