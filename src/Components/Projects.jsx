@@ -4,7 +4,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Jodel Clone",
-      image: "public/jodel-clone.jpg",
+      image: "https://raw.githubusercontent.com/BennethA/My-Portfolio/refs/heads/main/public/jodel-clone.jpg",
       description:
         "This project aims to replicate the core features of Jodel, allowing users to share anonymous posts and engage with others in their vicinity.",
       technologies: ["HTML", "CSS", "React JS", "Tailwind CSS"],
@@ -13,7 +13,7 @@ const Projects = () => {
     },
     {
       title: "Shop-Zone",
-      image: "public/shop-zone.png",
+      image: "https://raw.githubusercontent.com/BennethA/My-Portfolio/refs/heads/main/public/shop-zone.png",
       description:
         "Shop-Zone is a cutting-edge e-commerce platform built with React JS and styled with Tailwind CSS. Deployed on Vercel for lightning-fast performance.",
       technologies: ["HTML", "CSS", "React JS", "Tailwind CSS"],
