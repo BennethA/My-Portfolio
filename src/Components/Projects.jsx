@@ -46,7 +46,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="rounded-lg"
+                className="rounded-lg h-full w-full object-contain"
               />
             </motion.div>
             <motion.div
