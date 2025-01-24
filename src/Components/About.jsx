@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { IoIosInformationCircle } from "react-icons/io";
 
 const About = () => {
   return (
@@ -20,11 +21,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           className="flex justify-center h-[300px] w-full lg:w-1/2 overflow-hidden"
         >
-          <img
-            src=""
-            alt="about"
-            className="rounded-lg"
-          />
+        <IoIosInformationCircle className="h-[200px] w-auto text-white bg-none"/>
         </motion.div>
         <motion.p
           transition={{ duration: 0.5 }}
@@ -32,10 +29,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           className="w-full lg:w-1/2"
         >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro labore
-          quidem necessitatibus quod obcaecati delectus similique sint sit?
-          Commodi, deserunt autem molestiae magni libero labore. Consequuntur
-          voluptatem nostrum culpa fugit.
+          Hello! I'm Benneth Addo, a frontend developer with a passion for building beautiful, functional, and user-friendly web applications. With experience in HTML, CSS, JavaScript, React Js and Tailwind CSS, I'm dedicated to delivering high quality solutions and exceed expectations.
         </motion.p>
       </div>
     </div>
