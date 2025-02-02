@@ -22,6 +22,16 @@ const Projects = () => {
       link: "https://shop-zone-ruby.vercel.app",
       githubLink: "https://github.com/BennethA/Shop-Zone",
     },
+    {
+      title: "Invoice Management",
+      image:
+        "https://github.com/BennethA/My-Portfolio/blob/main/public/invoice-app.jpg?raw=true",
+      description:
+        "An invoice creator built with React JS and Tailwind CSS, making it easy to generate professional-looking invoices for your customers",
+      technologies: ["React JS", "Tailwind CSS"],
+      link: "https://formix-swart.vercel.app/",
+      githubLink: "https://github.com/BennethA/Formix",
+    },
   ];
   return (
     <div id="projects" className="border-b border-neutral-900 py-12">
