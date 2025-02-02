@@ -19,7 +19,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="flex justify-center h-[300px] w-full lg:w-1/2 overflow-hidden"
+          className="flex justify-center h-[300px] w-full lg:w-1/2 overflow-hidden items-center"
         >
         <IoIosInformationCircle className="h-[200px] w-auto text-white bg-none"/>
         </motion.div>

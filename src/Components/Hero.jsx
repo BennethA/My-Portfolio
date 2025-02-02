@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="border-b border-neutral-900 flex flex-wrap items-center justify-between py-12 sm:gap-3 lg:gap-0"
+      className="border-b border-neutral-900 flex flex-wrap items-center justify-between py-12 lg:gap-0 gap-3"
     >
       <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -31,7 +31,7 @@ const Hero = () => {
       >
         <img
           alt="Setup"
-          className="rounded-lg h-full w-full object-contain"
+          className="h-full w-full object-contain opacity-50"
           src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp"
         />
       </motion.div>
