@@ -6,7 +6,7 @@ import { FaSquareXTwitter, FaWhatsapp } from "react-icons/fa6";
 const Contact = () => {
   const socials = [
     {
-      link: "http://wa.me/0508529031",
+      link: "http://wa.me/0539540191",
       icon: <FaWhatsapp />,
       name: "WhatsApp",
     },

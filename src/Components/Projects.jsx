@@ -1,11 +1,15 @@
 import { motion } from "motion/react";
 
+import jodelImg from "../assets/images/jodel-clone.jpg"
+import shopZoneImg from "../assets/images/shop-zone.png"
+import invoiceAppImg from "../assets/images/invoice-app.jpg";
+import logWorld from "../assets/images/log-world.jpg";
+
 const Projects = () => {
   const projects = [
     {
       title: "Jodel Clone",
-      image:
-        "https://raw.githubusercontent.com/BennethA/My-Portfolio/refs/heads/main/public/jodel-clone.jpg",
+      image: jodelImg,
       description:
         "This project aims to replicate the core features of Jodel, allowing users to share anonymous posts and engage with others in their vicinity.",
       technologies: ["React JS", "Tailwind CSS"],
@@ -14,8 +18,7 @@ const Projects = () => {
     },
     {
       title: "Shop-Zone",
-      image:
-        "https://raw.githubusercontent.com/BennethA/My-Portfolio/refs/heads/main/public/shop-zone.png",
+      image: shopZoneImg,
       description:
         "Shop-Zone is a cutting-edge e-commerce platform built with React JS and styled with Tailwind CSS. Deployed on Vercel for lightning-fast performance.",
       technologies: ["React JS", "Tailwind CSS"],
@@ -24,13 +27,21 @@ const Projects = () => {
     },
     {
       title: "Invoice Management",
-      image:
-        "https://github.com/BennethA/My-Portfolio/blob/main/public/invoice-app.jpg?raw=true",
+      image: invoiceAppImg,
       description:
         "An invoice creator built with React JS and Tailwind CSS, making it easy to generate professional-looking invoices for your customers",
       technologies: ["React JS", "Tailwind CSS"],
       link: "https://formix-swart.vercel.app/",
       githubLink: "https://github.com/BennethA/Formix",
+    },
+    {
+      title: "Travel Agency",
+      image: logWorld,
+      description:
+        "LogWorld provides unforgettable experience that transport you to breathtaking locations where you can build meaningful connections with others and gather stories that you will trasure for a lifetime.",
+      technologies: ["React JS", "Tailwind CSS"],
+      link: "https://log-world.vercel.app/",
+      githubLink: "https://github.com/BennethA/LogWorld",
     },
   ];
   return (
