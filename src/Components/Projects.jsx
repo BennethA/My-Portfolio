@@ -8,6 +8,15 @@ import logWorld from "../assets/images/log-world.jpg";
 const Projects = () => {
   const projects = [
     {
+      title: "Travel Agency",
+      image: logWorld,
+      description:
+        "LogWorld provides unforgettable experience that transport you to breathtaking locations where you can build meaningful connections with others and gather stories that you will trasure for a lifetime.",
+      technologies: ["React JS", "Tailwind CSS"],
+      link: "https://log-world.vercel.app/",
+      githubLink: "https://github.com/BennethA/LogWorld",
+    },
+    {
       title: "Jodel Clone",
       image: jodelImg,
       description:
@@ -33,15 +42,6 @@ const Projects = () => {
       technologies: ["React JS", "Tailwind CSS"],
       link: "https://formix-swart.vercel.app/",
       githubLink: "https://github.com/BennethA/Formix",
-    },
-    {
-      title: "Travel Agency",
-      image: logWorld,
-      description:
-        "LogWorld provides unforgettable experience that transport you to breathtaking locations where you can build meaningful connections with others and gather stories that you will trasure for a lifetime.",
-      technologies: ["React JS", "Tailwind CSS"],
-      link: "https://log-world.vercel.app/",
-      githubLink: "https://github.com/BennethA/LogWorld",
     },
   ];
   return (
