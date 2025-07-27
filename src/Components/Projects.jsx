@@ -1,12 +1,21 @@
 import { motion } from "motion/react";
 
 import jodelImg from "../assets/images/jodel-clone.jpg"
-import shopZoneImg from "../assets/images/shop-zone.png"
+import zippyCartImg from "../assets/images/zippycart.png"
 import invoiceAppImg from "../assets/images/invoice-app.jpg";
 import logWorld from "../assets/images/log-world.jpg";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "ZippyCart",
+      image: zippyCartImg,
+      description:
+        "ZippyCart is a cutting-edge e-commerce platform built with React JS and styled with Tailwind CSS. Deployed on Vercel for lightning-fast performance.",
+      technologies: ["React JS", "Tailwind CSS"],
+      link: "https://zippy-cart.vercel.app",
+      githubLink: "https://github.com/BennethA/ZippyCart",
+    },
     {
       title: "Jodel Clone",
       image: jodelImg,
@@ -15,15 +24,6 @@ const Projects = () => {
       technologies: ["React JS", "Tailwind CSS"],
       link: "https://jodel-clone.vercel.app",
       githubLink: "https://github.com/BennethA/Jodel-Clone",
-    },
-    {
-      title: "Shop-Zone",
-      image: shopZoneImg,
-      description:
-        "Shop-Zone is a cutting-edge e-commerce platform built with React JS and styled with Tailwind CSS. Deployed on Vercel for lightning-fast performance.",
-      technologies: ["React JS", "Tailwind CSS"],
-      link: "https://shop-zone-ruby.vercel.app",
-      githubLink: "https://github.com/BennethA/Shop-Zone",
     },
     {
       title: "Invoice Management",
