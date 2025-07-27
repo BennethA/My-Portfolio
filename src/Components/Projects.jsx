@@ -1,14 +1,13 @@
 import { motion } from "motion/react";
 
-import jodelImg from "../assets/images/jodel-clone.jpg"
-import zippyCartImg from "../assets/images/zippycart.png"
+import jodelImg from "../assets/images/jodel-clone.jpg";
+import zippyCartImg from "../assets/images/zippycart.png";
 import invoiceAppImg from "../assets/images/invoice-app.jpg";
 import logWorld from "../assets/images/log-world.jpg";
 
 const Projects = () => {
   const projects = [
     {
-<<<<<<< HEAD
       title: "ZippyCart",
       image: zippyCartImg,
       description:
@@ -16,7 +15,8 @@ const Projects = () => {
       technologies: ["React JS", "Tailwind CSS"],
       link: "https://zippy-cart.vercel.app",
       githubLink: "https://github.com/BennethA/ZippyCart",
-=======
+    },
+    {
       title: "Travel Agency",
       image: logWorld,
       description:
@@ -24,7 +24,6 @@ const Projects = () => {
       technologies: ["React JS", "Tailwind CSS"],
       link: "https://log-world.vercel.app/",
       githubLink: "https://github.com/BennethA/LogWorld",
->>>>>>> 07398e49bc564f4493e8a94c10f9a3648cf5c5f8
     },
     {
       title: "Jodel Clone",
