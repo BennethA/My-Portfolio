@@ -26,12 +26,14 @@ const Navbar = () => {
             BA
           </div>
           <div className="leading-tight">
-            <p className="font-display text-lg">Benneth Addo</p>
-            <p className="text-xs text-slate-400">Frontend Developer</p>
+            <p className="font-display text-base sm:text-lg">Benneth Addo</p>
+            <p className="hidden md:block text-xs text-slate-400">
+              Frontend Developer
+            </p>
           </div>
         </div>
 
-        <div className="hidden sm:block">
+        <div className="hidden md:block">
           <ul className="flex gap-6 text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
             {navigate.map((item, index) => (
               <li key={index}>
@@ -53,7 +55,7 @@ const Navbar = () => {
           aria-expanded={openMenu}
           aria-controls="mobile-menu"
           aria-label={openMenu ? "Close menu" : "Open menu"}
-          className="sm:hidden text-2xl text-slate-200 hover:text-amber-200"
+          className="md:hidden text-2xl text-slate-200 hover:text-amber-200"
         >
           {openMenu ? <BiX /> : <BiMenu />}
         </button>
@@ -61,7 +63,7 @@ const Navbar = () => {
 
       <div
         id="mobile-menu"
-        className={`sm:hidden fixed transition-all duration-500 top-[88px] translate-x-[-100%] left-4 right-4 rounded-2xl border border-white/10 bg-black/70 px-6 py-6 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 backdrop-blur ${
+        className={`md:hidden fixed transition-all duration-500 top-[88px] translate-x-[-100%] left-4 right-4 max-h-[70vh] overflow-auto rounded-2xl border border-white/10 bg-black/70 px-6 py-6 text-sm font-semibold uppercase tracking-[0.12em] text-slate-200 backdrop-blur ${
           openMenu ? "translate-x-[0%]" : ""
         }`}
       >
