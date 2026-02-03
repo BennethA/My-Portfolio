@@ -6,13 +6,13 @@ import Technologies from "./Technologies";
 
 const Home = () => {
   return (
-    <>
+    <div className="space-y-4">
       <Hero />
       <About />
       <Technologies />
       <Projects />
       <Contact />
-    </>
+    </div>
   );
 };
 

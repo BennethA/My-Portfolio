@@ -1,38 +1,56 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { IoIosInformationCircle } from "react-icons/io";
 
 const About = () => {
   return (
-    <div id="about" className="border-b border-neutral-900 py-12">
+    <section id="about" className="py-20">
       <motion.h1
         transition={{ duration: 0.5 }}
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className="text-center text-xl md:text-6xl mb-6"
+        className="font-display text-3xl md:text-5xl"
       >
-        About
-        <span className="text-[rebeccapurple]"> Me</span>
+        About the Builder
       </motion.h1>
 
-      <div className="flex flex-wrap justify-between items-center sm:gap-3 lg:gap-0">
+      <div className="mt-8 grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
         <motion.div
           transition={{ duration: 0.5 }}
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="flex justify-center h-[300px] w-full lg:w-1/2 overflow-hidden items-center"
+          className="glass-panel rounded-3xl p-8"
         >
-        <IoIosInformationCircle className="h-[200px] w-auto text-white bg-none"/>
+          <div className="flex flex-col gap-6">
+            <IoIosInformationCircle className="h-16 w-16 text-amber-200" />
+            <p className="text-xl font-semibold text-white">
+              I translate product goals into refined, user-centered interfaces.
+            </p>
+            <div className="flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-slate-400">
+              <span>UX Flow</span>
+              <span>Design Systems</span>
+              <span>Motion</span>
+              <span>Flyers</span>
+              <span>Banners</span>
+            </div>
+          </div>
         </motion.div>
+
         <motion.p
           transition={{ duration: 0.5 }}
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="w-full lg:w-1/2"
+          className="text-lg leading-relaxed text-slate-300"
         >
-          Hello! I'm Benneth Addo, a frontend developer with a passion for building beautiful, functional, and user-friendly web applications. With experience in HTML, CSS, JavaScript, React Js and Tailwind CSS, I'm dedicated to delivering high quality solutions and exceed expectations.
+          Hello! I'm Benneth Addo, a frontend developer and visual designer
+          focused on building high-impact web experiences that feel premium,
+          performant, and clear. My strength is combining React, Motion, and
+          Tailwind CSS with brand-forward design for flyers, banners, and
+          marketing assets that align teams around a sharp visual story. I care
+          deeply about clean structure, accessible UX, and detail-driven
+          interactions.
         </motion.p>
       </div>
-    </div>
+    </section>
   );
 };
 

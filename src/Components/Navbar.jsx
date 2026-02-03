@@ -9,6 +9,7 @@ const Navbar = () => {
     { path: "about", name: "About" },
     { path: "technologies", name: "Technologies" },
     { path: "projects", name: "Projects" },
+    { path: "design", name: "Design" },
     { path: "contact", name: "Contact" },
   ];
 
@@ -18,51 +19,68 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center py-3 fixed bg-gradient-to-br from-black to-[#130113] z-10 right-0 left-0 top-0 px-4 md:px-11 lg:px-32">
-      <div className="font-bold text-2xl">
-        B<span className="text-[rebeccapurple] ml-[1px]">A</span>
+    <nav className="fixed left-0 right-0 top-0 z-20">
+      <div className="mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-black/40 px-4 py-3 backdrop-blur md:px-6">
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-gradient-to-br from-amber-300/20 via-sky-500/10 to-transparent text-lg font-semibold">
+            BA
+          </div>
+          <div className="leading-tight">
+            <p className="font-display text-lg">Benneth Addo</p>
+            <p className="text-xs text-slate-400">Frontend Developer</p>
+          </div>
+        </div>
+
+        <div className="hidden sm:block">
+          <ul className="flex gap-6 text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
+            {navigate.map((item, index) => (
+              <li key={index}>
+                <NavLink
+                  className="hover:text-amber-200 focus-visible:text-amber-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+                  to="#"
+                  onClick={() => handleScroll(item.path)}
+                >
+                  {item.name}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setOpenMenu(!openMenu)}
+          aria-expanded={openMenu}
+          aria-controls="mobile-menu"
+          aria-label={openMenu ? "Close menu" : "Open menu"}
+          className="sm:hidden text-2xl text-slate-200 hover:text-amber-200"
+        >
+          {openMenu ? <BiX /> : <BiMenu />}
+        </button>
       </div>
-      <div className="hidden sm:block">
-        <ul className="flex  gap-3 font-semibold">
+
+      <div
+        id="mobile-menu"
+        className={`sm:hidden fixed transition-all duration-500 top-[88px] translate-x-[-100%] left-4 right-4 rounded-2xl border border-white/10 bg-black/70 px-6 py-6 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 backdrop-blur ${
+          openMenu ? "translate-x-[0%]" : ""
+        }`}
+      >
+        <ul className="flex flex-col gap-4">
           {navigate.map((item, index) => (
-            <li key={index}>
-              <NavLink
-                className="hover:text-purple-700"
+            <li key={index} className="flex">
+              <Link
                 to="#"
-                onClick={() => handleScroll(item.path)}
+                onClick={() => {
+                  setOpenMenu(false);
+                  handleScroll(item.path);
+                }}
+                className="hover:text-amber-200 focus-visible:text-amber-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
               >
                 {item.name}
-              </NavLink>
+              </Link>
             </li>
           ))}
         </ul>
-      </div>
-      <div
-        onClick={() => setOpenMenu(!openMenu)}
-        className={`sm:hidden text-2xl cursor-pointer hover:opacity-80`}
-      >
-        {openMenu ? <BiX /> : <BiMenu />}
-      </div>
-      <div
-        className={`sm:hidden fixed transition-all duration-500 top-[54px] translate-x-[-100%] left-0 w-[270px] px-[30px] py-[20px] text-[17px] font-semibold overflow-y-auto border-r-2 bottom-0 bg-gradient-to-br from-black to-[#130113] ${
-          openMenu ? "translate-x-[0%]" : ""
-        }
-        `}
-      >
-        {navigate.map((item, index) => (
-          <li key={index} className="flex">
-            <Link
-              to="#"
-              onClick={() => {
-                setOpenMenu(false);
-                handleScroll(item.path);
-              }}
-              className={`mt-4 font-bold hover:text-purple-700 `}
-            >
-              {item.name}
-            </Link>
-          </li>
-        ))}
       </div>
     </nav>
   );

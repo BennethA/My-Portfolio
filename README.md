@@ -24,7 +24,10 @@ Features
 
 Getting Started
 
-To view the project, simply clone the repository and open the index.html file in your preferred web browser.
+Install dependencies and run the dev server:
+
+1. npm install
+2. npm run dev
 
 Contact
 
