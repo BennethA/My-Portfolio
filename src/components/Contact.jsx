@@ -50,9 +50,6 @@ const Contact = () => {
           <p className="text-xs uppercase tracking-[0.3em] text-amber-200/80">
             Availability
           </p>
-          <p className="mt-4 text-2xl font-semibold text-white">
-            Open for product design + frontend delivery in Q2 2026.
-          </p>
           <p className="mt-4 text-slate-300">
             If you have a launch, redesign, or new product concept, I can help
             shape the interface, design marketing assets, and ship the React
